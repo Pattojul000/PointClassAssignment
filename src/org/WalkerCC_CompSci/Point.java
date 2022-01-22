@@ -1,31 +1,38 @@
 package org.WalkerCC_CompSci;
 
 public class Point {
-    private double x = 0;
-    private double y = 0;
+    private double x;
+    private double y;
 
     public Point(double x, double y){
-
+        this.x = x;
+        this.y = y;
     }
 
     public double getX() {
-        return 0;
+
+        return this.x;
     }
 
     public double getY() {
-        return 0;
+
+        return this.y;
+
     }
 
     public void FlipVertical() {
-
+        this.y = -y;
     }
 
     public void FlipHorizontal() {
-
+        this.x = -x;
+        this.y = -y;
     }
 
     public void Translate(double xChange, double yChange){
 
+        this.x = x + xChange;
+        this.y = y + yChange;
 
     }
 }
